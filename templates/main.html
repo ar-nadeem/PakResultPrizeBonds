@@ -1,0 +1,307 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+	<link rel="icon" href="{% static '/images/edupak/icon3.png' %}" style="width: 50%">
+
+		<title>Prize Bond List 2020 - Check Prize Bond Draw Results Online</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Check Online Prize Bonds Draw Results & 2020 Prize Bond List and Schedule List 100, 200, 750, 1500, 7500, 15000, 25000, 40000. Get everything about Prize Bond in Pakistan at Pakresult.com" />
+		<meta name="keywords" content="Prize Bond List, Prize Bonds, Prize Bond Draw, Prize Bond Results, Winner List, Pakresult, Pak Result.com, PakResult.com" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+        <meta property="og:title" content="Prize Bond List 2020 Check Pakistan Prize Bond Draw Results Online">
+        <meta property="og:type" content="article">
+        <meta property="og:description" content="Check Online Prize Bonds Draw Results & 2020 Prize Bond List and Schedule List 100, 200, 750, 1500, 7500, 15000, 25000, 40000. Get everything about Prize Bond in Pakistan at Pakresult.com">
+        <meta property="og:site_name" content="Pakresult.pk">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Prize Bond List 2020 Check Pakistan Prize Bond Draw Results Online">
+        <meta property="og:description" content="Check Prize bond draw Results 2020 online. All previous and latest Prize Bond number and Schedule List for 100, 200, 750, 1500, 7500, 15000, 25000, 40000 bonds is available in Pakistan.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:description" content="Check Prize bond draw Results 2020 online. All previous and latest Prize Bond number and Schedule List for 100, 200, 750, 1500, 7500, 15000, 25000, 40000 bonds is available in Pakistan.">
+        <meta name="twitter:title" content="Prize Bond List 2020 Check Pakistan Prize Bond Draw Results Online">
+        <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+
+        <link rel="stylesheet" href="{% static 'css/custom-written.css' %}" />
+    </head>
+    
+    <style> /*DONT REMOVE*/
+        .abc{margin: auto;
+            width: 50%;
+            background-color: #F1F1F1;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border: 4px solid darkgreen;
+            border-bottom: none;}
+        
+        .xyz{margin: auto;
+            width: 50%;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top:20px;
+            border: 3px solid white;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom: none;}
+        .divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+    </style>
+
+    
+	   <body class="is-preload">
+
+           <div id="overlay"><span class="spinner"></span></div>
+
+           <!-- Header -->
+           <header id="header">
+               <a class="logo" href="/home" style="font-family: Times New Roman, Times, serif; font-size: 25px"> &#8226;  Pak Result.com  &#8226;</a>
+               <nav>
+                   <a href="#menu" style="font-size: 18px">Menu</a>
+               </nav>
+           </header>
+
+
+        
+           <!-- Nav -->
+           {% include "navbar.html" %}
+
+        
+        
+           <!-- Heading -->
+           <div id="heading" >
+               <h1 style="font-family: serif" class="icon fa-money"> Prize Bond Draw Result</h1>
+           </div>
+
+        
+        
+           <!-- Main -->
+           <section id="main" class="wrapper" >
+
+
+               <div class="inner" style="border: 5px solid darkgreen; border-radius: 31px">
+                   <footer id="footer" style="background-color: #2BAE66FF; border-radius: 30px">
+                       <h1 class="abc" style="color: darkgreen">Prize Bond Result</h1>
+                       <div class="inner" style="background-color: #212121;border-radius: 30px">
+                 
+                           <section>
+                               <!--Subscription-->
+                               <form id="result" style="border: 4px solid white; border-radius: 30px">
+                                <div style="padding: 30px" class="row gtr-uniform">
+			     							
+                                    <div class="col-6 col-12-small">
+                                        <h2 >Prize Bond Ammount :</h2>
+                                    </div>
+                                    <div class="coll-6 col-12-small">
+                                        <select name="category" id="prize" style="width: 240px; font-size: 24px;">
+                                            <option value=""> Select Amount </option>
+                                            <option value="1">100</option>
+                                            <option value="2">200</option>
+                                            <option value="3">750</option>
+                                            <option value="4">1500</option>
+                                            <option value="5">7500</option>
+                                            <option value="6">15000</option>
+                                            <option value="7">25000</option>
+                                            <option value="8">40000</option>
+                                            <option value="9">40000 Premium Bond</option>
+												</select>
+                                    </div>
+                                    <div class="col-6 col-12-small">
+                                        <h2 >Draw Date :</h2>
+                                    </div>
+                                    <div class="coll-6 col-12-small" id="drawdateColumn">
+                                        <select name="category" id="drawdate"  style="width: 240px; font-size: 24px">
+                                             {{ htmlDropdown|safe}}
+												</select>
+                                    </div>
+                                    <div class="col-12"style="text-align: center">
+                                        <h2 >&#8595; Single Number Search &#8595;</h2>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" name="rollno" id="single" value="" placeholder="Enter Number" maxlength="6" style="font-size: 25px"/>
+                                    </div>
+                                    <div class="col-12"style="text-align: center">
+                                        <h2 >&#8595; Series Numbers Search &#8595;</h2>
+                                    </div>
+                                    <div class="col-4 col-12-small" style="text-align: right">
+                                        <input type="text" name="rollno" id="rangefrom" value="" placeholder="Serires Start No." maxlength="6" style="font-size: 25px"/>
+                                    </div>
+                                    <div class="col-4 col-12-small" style="text-align: center">
+                                        <p style="font-size: 30px; color: white"> 	&#8594; &nbsp;&nbsp;&nbsp; To&nbsp;&nbsp;&nbsp; 	  &#8594;</p>
+                                    </div>
+                                    <div class="col-4 col-12-small" style="text-align: left">
+                                        <input type="text" name="rollno" id="rangeto" value="" placeholder="Series End No." maxlength="6" style="font-size: 25px"/>
+                                    </div>
+                                    
+                                    
+                                   
+                                    </div>
+                                 
+
+
+                       <div class="xyz" >
+                           <input type="submit" value="Search" class="primary" style="font-size: 20px; background-color: darkgreen"/>
+                       </div>
+                                   </form>
+                           </section>
+                          <section id="maine">
+
+                                    {{ Finalresult|safe }}
+
+                          </section>
+                       </div>
+                       
+
+
+                   </footer>
+               </div>
+           </section>
+        
+
+
+
+        
+           <!-- Footer -->
+           {% include "footer.html" %}
+
+           <!-- Scripts -->
+           <script src="{% static "js/browser.min.js" %}"></script>
+           <script src="{% static "js/breakpoints.min.js" %}"></script>
+           <script src="{% static "js/util.js" %}"></script>
+           <script src="{% static "js/main.js" %}"></script>
+
+
+
+	   </body>
+    
+    
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+ 
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+            <script>
+                    function loading_on() {
+        document.getElementById("overlay").style.display = "block";
+    }
+    function loading_off() {
+        document.getElementById("overlay").style.display = "none";
+    }
+    $("#prize").change(function (e) {
+        loading_on();
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+
+            data: {
+
+                prize: $("#prize").val(),
+
+
+                csrfmiddlewaretoken: "{{ csrf_token }}",
+                action: 'post',
+                forum: 'DropDown',
+            },
+            success: function (data) {
+                loading_off();
+                $("#drawdate").html(data);
+                {#$("body").html(data);#}
+
+                {#var elmnt = document.getElementById("maine");#}
+                {#elmnt.scrollIntoView();#}
+
+                  // document ready
+            },
+        });
+        return false;
+    });
+
+    $("#result").submit(function (e) {
+        loading_on();
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+
+            data: {
+
+                country: $("#prize").val(),
+                state: $("#drawdate").val(),
+                range_from: $("#rangefrom").val(),
+                range_to: $("#rangeto").val(),
+                pb_number_list: $("#single").val(),
+
+                csrfmiddlewaretoken: "{{ csrf_token }}",
+                action: 'post',
+                forum: 'Result',
+            },
+            success: function (data) {
+                loading_off();
+                $("#maine").html(data.Finalresult);
+
+                {#$("body").html(data);#}
+
+                {#var elmnt = document.getElementById("maine");#}
+                {#elmnt.scrollIntoView();#}
+
+
+
+                  // document ready
+            },
+        });
+        return false;
+    });
+        </script>
+
+</html>

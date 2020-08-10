@@ -1,0 +1,1 @@
+web: gunicorn prizbondZues.wsgi --log-file -
