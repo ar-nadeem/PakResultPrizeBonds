@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=ytiy9uo293h*=)$&a=86+!^nov268mr!y))ngqe!00vcqsx+n'
 # SECURITY WARNING: don't run with debug turned on in production!
+SECURE_SSL_REDIRECT = True
 DEBUG = False
 
 ALLOWED_HOSTS = ['zues-prizebonds.herokuapp.com','localhost','127.0.0.1','prizebond.pakresult.com']
