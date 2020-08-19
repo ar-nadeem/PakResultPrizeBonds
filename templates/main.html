@@ -41,7 +41,8 @@
             padding-bottom: 20px;
             padding-top: 20px;
             border: 4px solid darkgreen;
-            border-bottom: none;}
+            border-bottom: none;
+            font-family: serif;}
         
         .xyz{margin: auto;
             width: 70%;
@@ -69,14 +70,17 @@
 	display: table-header-group;
 }
 .divTableCell, .divTableHead {
-	border: 1px solid #999999;
+	border: 1px solid white;
 	display: table-cell;
 	padding: 3px 10px;
+    
+    font-family: Cambria;
 }
 .divTableHeading {
 	background-color: #EEE;
 	display: table-header-group;
 	font-weight: bold;
+    text-align: center;
 }
 .divTableFoot {
 	background-color: #EEE;
@@ -156,20 +160,20 @@
                                              {{ htmlDropdown|safe}}
 												</select>
                                     </div>
-                                    <div class="col-12"style="text-align: center">
-                                        <h2 >Single No. Search &#8595;</h2>
+                                    <div class="col-12" style="text-align: center">
+                                        <h2 >Single Search </h2>
                                     </div>
                                     <div class="col-12">
                                         <input type="text" name="rollno" id="single" value="" placeholder="Enter Number" maxlength="6" style="font-size: 18px"/>
                                     </div>
-                                    <div class="col-12"style="text-align: center">
-                                        <h2 >Series Search &#8595;</h2>
+                                    <div class="col-12" style="text-align: center">
+                                        <h2 >Series Search </h2>
                                     </div>
                                     <div class="col-4 col-12-small" style="text-align: right">
                                         <input type="text" name="rollno" id="rangefrom" value="" placeholder="Serires Start No." maxlength="6" style="font-size: 18px"/>
                                     </div>
                                     <div class="col-4 col-12-small" style="text-align: center">
-                                        <p style="font-size: 30px; color: white"> 	&#8594; To &#8594;</p>
+                                        <p style="font-size: 30px; color: white"> 	To </p>
                                     </div>
                                     <div class="col-4 col-12-small" style="text-align: left">
                                         <input type="text" name="rollno" id="rangeto" value="" placeholder="Series End No." maxlength="6" style="font-size: 18px"/>
@@ -194,7 +198,7 @@
                                </section>
                        </div>
                        
-
+                    <br>
                         
                    </footer>
                </div>
